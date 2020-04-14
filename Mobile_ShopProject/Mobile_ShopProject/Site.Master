@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Mobile_ShopProject.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <link href="Content/site.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="Home.aspx">Mobile Shop</a>
+    </div>
+    <ul class="nav navbar-nav">
+     
+
+      <li class="active"><a href="Home.aspx">What's New</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Choose Phones<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="Apple.aspx">Apple</a></li>
+          <li><a href="Android.aspx">Android</a></li>
+          
+        </ul>
+      </li>
+      
+      <li><a href="contactus.aspx">  <span class="glyphicon glyphicon-envelope"></span> Customer Service</a></li>
+       <li><a href="Cart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span> Your Cart</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      
+        
+      <li><a href="Login.aspx"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+    </ul>
+  </div>
+</nav>
+  
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+<footer>
+   
+  <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+  <a href="https://ca.linkedin.com/company/linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#"><i class="fa fa-google-plus"></i></a>
+  <a href="#"><i class="fa fa-skype"></i></a>
+</footer>
+    </form>
+</body>
+</html>
